@@ -1,45 +1,49 @@
 ---
-subject: My Newsletter Email Template Subject
+subject: 
 ---
 
 <container>
-
-  <spacer size="16"></spacer>
-
-  <row>
-    <columns>
-      <center>
-        <h1>CSArt Maine</h1>
-      </center>
-
-      <spacer size="16"></spacer>
-      
-      <p class="lead">Leading Paragraph</p>
-
-      <row>
-        <columns large="6">
-          <h4>More Reading:</h4>
-          <ul>
-            <li><a href="#">Lorem Ipsum Dolor Sit Amet</a></li>
-            <li><a href="#">Lorem Ipsum Dolor Sit Amet</a></li>
-            <li><a href="#">Lorem Ipsum Dolor Sit Amet</a></li>
-          </ul>
-        </columns>
+    <row>
         <columns>
-          <h4>Get Involved:</h4>
-          <ul>
-            <li><a href="https://facebook.com/csartmaine">Facebook</a></li>
-            <li><a href="https://twitter.com/csartmaine">Twitter</a></li>
-            <li><a href="https://instagram.com/instagram">Instagram</a></li>
-          </ul>
+            <p><center><a href="*|ARCHIVE|*">View this email in your browser</a></center></p>
         </columns>
-      </row>
+    </row>
 
-      <container>
-        hello
-      </container>
+    <row class="collapse">
+        <columns>
+            <img src="http://placehold.it/548x200" mc:edit="headimgg" />
+        </columns>
+    </row>
 
-      <p><small><center>CSArt Maine 2018 | <a href="#">Unsubscribe</a><center></small></p>
-    </columns>
-  </row>
+    <row mc:hideable> 
+        <columns medium="6">
+            <spacer size="16"></spacer>
+            <h4 mc:edit >Introduction</h4>
+        </columns>
+        <columns medium="6">
+            <spacer size="16"></spacer>
+            <p class="text-right small-text-center" mc:edit >January 2018</p>
+        </columns>
+    </row>
+    
+    <row mc:hideable>
+        <columns>
+            <p mc:edit>Urna nunc id cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis.</p>
+        </columns>
+    </row>
+
+    <row mc:repeatable>
+        <columns>
+            <img src="https://placehold.it/700x300" alt="" mc:edit />
+            <h4 class="heading" mc:edit >Article 1</h4>
+            <p mc:edit>Arcu ac tortor dignissim convallis aenean.</p>
+        </columns>
+    </row>
+
+    <row mc:edit="footer">
+        <columns>
+            <p class="unsubscribe"><center><a href="*|UNSUB|*">Unsubscribe</a></center></p>
+            <p><center><small>© CSArt Maine 2018 | Portland, Maine</small></center></p>
+        </columns>
+    </row>
 </container>
