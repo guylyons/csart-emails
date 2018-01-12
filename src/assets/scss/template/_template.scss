@@ -77,7 +77,8 @@ table.button.google table td {
   text-align: right;
 }
 
-img {
+.fluid, .fluid img {
+  height:auto !important;
+  max-width:600px !important;
   width: 100% !important;
-  height: auto !important;
 }
